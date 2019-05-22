@@ -1,0 +1,350 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Start your base/mobile styles here */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+btn-group {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.interactivetxt {
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+hr {
+    max-width: 25%;
+}
+
+.space {
+    padding: 25px;
+}
+
+.select-table-cells {
+    width: 40%;
+    display: inline-block;
+}
+
+.day-table-cells {
+    width: 22%;
+    font-size: 13px;
+}
+
+#moblank #tublank #weblank #thblank #frblank #sablank #sublank {
+    display: none;
+    padding: 0px 0px;
+    border: 0px;
+}
+
+.occupy.deactive {
+    display: none;
+}
+
+.occupy {
+    height: 55px;
+    width: 100%;
+    padding: 50px;
+}
+
+.cost {
+    display: none;
+    height: 25px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.cost.active {
+    display: block;
+}
+
+.radio-toolbar {
+    margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #FFFFFF;
+    padding: 2.5px 20px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    margin: 0px;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: #ff5252;
+    border-color: #ff5252;
+    color: #FFFFFF;
+}
+
+.btn-group {
+    margin: 0 auto;
+    width: 35%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculate {
+    display: flex;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    padding: 12px 19px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset {
+    display: flex;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    padding: 12px 30px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #000000;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fadein {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
+}
+
+.fadein2 {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+.fadein3 {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+span.tcost {
+    color: #ff5252;
+}
+
+span.mcost {
+    color: #ff5252;
+}
+
+span.acost {
+    color: #ff5252;
+}
+
+/* Tablet/Desktop overrides */
+@media(min-width: 681px) {
+
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .select-table-cells {
+        width: 22%;
+        display: table-cell;
+    }
+
+    .day-table-cells {
+        width: 12%;
+    }
+
+    .radio-toolbar label {
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 44px;
+        font-size: .75em;
+        border: 1px solid #000000;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group {
+        margin: 0 auto;
+        width: 25%;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calculate {
+        display: flex;
+        font-family: 'Roboto', Helvetica, sans-serif;
+        background-color: #FFFFFF;
+        padding: 12px 19px;
+        font-size: 13px;
+        border: 1px solid #000000;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reset {
+        display: flex;
+        font-family: 'Roboto', Helvetica, sans-serif;
+        background-color: #FFFFFF;
+        padding: 12px 30px;
+        font-size: 13px;
+        border: 1px solid #000000;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .interactivetxt {
+        font-size: 16px;
+        font-family: 'Roboto', Helvetica, sans-serif;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .radio-toolbar label:hover {
+        background-color: #ff7070;
+        color: #FFFFFF;
+        border: 1px solid #ff7070;
+    }
+
+    .btn-group button:hover {
+        background-color: #ff5252;
+        color: #FFFFFF;
+        border: 1px solid #ff5252;
+    }
+
+    h2.tabwk {
+        position: relative;
+        left: 175px;
+    }
+
+    h2.tabyr {
+        position: relative;
+        left: 163px;
+    }
+}
+
+@media(min-width: 729px) {
+
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+    .select-table-cells {
+        width: 22%;
+        display: table-cell;
+    }
+
+    .day-table-cells {
+        width: 12%;
+    }
+
+    .radio-toolbar label {
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 44px;
+        font-size: .7em;
+        border-radius: 0px;
+        margin: 0px;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .btn-group button {
+        font-family: 'Roboto', Helvetica, sans-serif;
+        display: inline-block;
+        background-color: #FFFFFF;
+        padding: 12px 20px;
+        font-size: .7em;
+        border-radius: 0px;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #000000;
+        border-radius: 6px;
+    }
+
+    .occupy {
+        padding: 60px;
+    }
+
+    .content {
+        margin-top: -55px;
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>The real cost of congestion pricing</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|PT+Serif:100,400|VT323" rel="stylesheet">
+    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+
+
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th class="day-table-cells">Monday</th>
+              <th><input type="radio" id="moblank" name="monday" value="0" checked="checked"></th>
+              <th class="select-table-cells"><input type="radio" id="momorn" name="monday" value="8.50">
+                <label for="momorn">5 am - 6 am</label></th>
+              <th class="select-table-cells"> <input type="radio" id="morush" name="monday" value="11.50">
+                <label for="morush">6 am - 9 am</label></th>
+              <th class="select-table-cells"><input type="radio" id="moday" name="monday" value="8.50">
+                <label for="moday">9 am - 11 pm</label></th>
+              <th class="select-table-cells"><input type="radio" id="monight" name="monday" value="5.50">
+                <label for="monight">11 pm - 5 am</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th class="day-table-cells">Tuesday</th>
+              <th><input type="radio" id="tublank" name="tuesday" value="0" checked="checked"></th>
+              <th class="select-table-cells"><input type="radio" id="tumorn" name="tuesday" value="8.50">
+                <label for="tumorn">5 am - 6 am</label></th>
+              <th class="select-table-cells"> <input type="radio" id="turush" name="tuesday" value="11.50">
+                <label for="turush">6 am - 9 am</label></th>
+              <th class="select-table-cells"><input type="radio" id="tuday" name="tuesday" value="8.50">
+                <label for="tuday">9 am - 11 pm</label></th>
+              <th class="select-table-cells"><input type="radio" id="tunight" name="tuesday" value="5.50">
+                <label for="tunight">11 pm - 5 am</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th class="day-table-cells">Wednesday</th>
+              <th><input type="radio" id="weblank" name="wednesday" value="0" checked="checked"></th>
+              <th class="select-table-cells"><input type="radio" id="wemorn" name="wednesday" value="8.50">
+                <label for="wemorn">5 am - 6 am</label></th>
+              <th class="select-table-cells"> <input type="radio" id="werush" name="wednesday" value="11.50">
+                <label for="werush">6 am - 9 am</label></th>
+              <th class="select-table-cells"><input type="radio" id="weday" name="wednesday" value="8.50">
+                <label for="weday">9 am - 11 pm</label></th>
+              <th class="select-table-cells"><input type="radio" id="wenight" name="wednesday" value="5.50">
+                <label for="wenight">11 pm - 5 am</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th class="day-table-cells">Thursday</th>
+              <th><input type="radio" id="thblank" name="thursday" value="0" checked="checked"></th>
+              <th class="select-table-cells"><input type="radio" id="thmorn" name="thursday" value="8.50">
+                <label for="thmorn">5 am - 6 am</label></th>
+              <th class="select-table-cells"> <input type="radio" id="thrush" name="thursday" value="11.50">
+                <label for="thrush">6 am - 9 am</label></th>
+              <th class="select-table-cells"><input type="radio" id="thday" name="thursday" value="8.50">
+                <label for="thday">9 am - 11 pm</label></th>
+              <th class="select-table-cells"><input type="radio" id="thnight" name="thursday" value="5.50">
+                <label for="thnight">11 pm - 5 am</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th class="day-table-cells">Friday</th>
+              <th><input type="radio" id="frblank" name="friday" value="0" checked="checked"></th>
+              <th class="select-table-cells"><input type="radio" id="frmorn" name="friday" value="8.50">
+                <label for="frmorn">5 am - 6 am</label></th>
+              <th class="select-table-cells"> <input type="radio" id="frrush" name="friday" value="11.50">
+                <label for="frrush">6 am - 9 am</label></th>
+              <th class="select-table-cells"><input type="radio" id="frday" name="friday" value="8.50">
+                <label for="frday">9 am - 11 pm</label></th>
+              <th class="select-table-cells"><input type="radio" id="frnight" name="friday" value="5.50">
+                <label for="frnight">11 pm - 12 am</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th class="day-table-cells">Saturday</th>
+              <th><input type="radio" id="sablank" name="saturday" value="0" checked="checked"></th>
+              <th class="select-table-cells"><input type="radio" id="samorn" name="saturday" value="5.50">
+                <label for="samorn">5 am - 12 pm</label></th>
+              <th class="select-table-cells"> <input type="radio" id="sarush" name="saturday" value="8.50">
+                <label for="sarush">12 pm - 5 pm</label></th>
+              <th class="select-table-cells"> <input type="radio" id="saday" name="saturday" value="8.50">
+                <label for="saday">5 pm - 10 pm</label></th>
+              <th class="select-table-cells"> <input type="radio" id="sanight" name="saturday" value="5.50">
+                <label for="sanight">10 pm - 5 am</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div>
+        <table>
+          <form>
+            <tr class="radio-toolbar">
+              <th class="day-table-cells">Sunday</th>
+              <th><input type="radio" id="sublank" name="sunday" value="0" checked="checked"></th>
+              <th class="select-table-cells"><input type="radio" id="sumorn" name="sunday" value="5.50">
+                <label for="sumorn">5 am - 12 pm</label></th>
+              <th class="select-table-cells"> <input type="radio" id="surush" name="sunday" value="8.50">
+                <label for="surush">12 pm - 5 pm</label></th>
+              <th class="select-table-cells"> <input type="radio" id="suday" name="sunday" value="8.50">
+                <label for="suday">5 pm - 10 pm</label></th>
+              <th class="select-table-cells"> <input type="radio" id="sunight" name="sunday" value="5.50">
+                <label for="sunight">10 pm - 5 am</label></th>
+            </tr>
+          </form>
+        </table>
+      </div>
+
+      <div class="btn-group">
+        <button id="btn" class="calculate">Calculate</button>
+        <button id="rst-btn" class="reset">Reset</button>
+      </div>
+
+
+      <!--  <div class="cost">
+        <div id="tcost">
+          <h2>Your current schedule will cost you $<span> </span></h2>
+        </div>
+        <div id="mcost">
+          <p>$<span> </span> per month</p>
+        </div>
+        <div id="acost">
+          <p>$<span> </span> per year</p>
+        </div>
+      </div> -->
+
+
+      <div class="occupy">
+      </div>
+
+      <div class="cost">
+        <h2><span class="animation-one">Your current schedule will cost <span class="tcost"> </span> per week</span></h2>
+        <h2 class="tabwk"><span class="animation-two"> <span class="mcost"> </span> per month</span></h2>
+        <h2 class="tabyr"><span class="animation-three"> <span class="acost"></span> per year</span></h2>
+      </div>
+
+      <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <!-- Your javascript should be called here -->
+      <script src="main.js"></script>
+  </body>
+
+</html>
